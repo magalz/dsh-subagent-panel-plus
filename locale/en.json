@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent panel plus",
+    "description": "Replaces the session header's subagent list with a copy that shows each subagent's model on a third line, lists running subagents first and colours the status dot. A ⋯ menu on each row archives the subagent or deletes it permanently (its session folder is removed from disk)."
+  }
+}
