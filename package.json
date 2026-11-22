@@ -1,0 +1,54 @@
+{
+  "name": "dsh-subagent-panel-plus",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Replaces the session header's subagent list with a copy that shows each subagent's model, orders by state, and adds a menu to archive or permanently delete a subagent.",
+  "license": "MIT",
+  "author": "magalz",
+  "homepage": "https://github.com/magalz/dsh-subagent-panel-plus#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magalz/dsh-subagent-panel-plus.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "subagent"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5 <0.3.0"
+  },
+  "type": "module",
+  "main": "./host.js",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "host.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check client.js && node --check host.js",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
