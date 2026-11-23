@@ -33,15 +33,15 @@ DSH's search index, projection cache and archived-session set still hold the rec
 
 ## Install
 
-From the Plugins page, add this directory as a local bundle and restart DSH. The package is a plain ESM bundle with no build step and no runtime dependencies, so a git install needs no `allowBuilds` permission.
+In dsh, open **Plugins → Add plugin** and enter `github:magalz/dsh-subagent-panel-plus`; restart DSH if the panel does not appear. The package is a plain ESM bundle with no build step and no runtime dependencies, so a git install needs no `allowBuilds` permission.
 
-For a CLI profile:
+The same dialog also accepts the prebuilt tarball attached to [release v0.1.0](https://github.com/magalz/dsh-subagent-panel-plus/releases/tag/v0.1.0), or a local path to a checkout of this repository:
 
-```sh
+```shell
 dsh plugin --profile <name> add ./dsh-subagent-panel-plus
 ```
 
-Distribution to a plugin index is not yet enabled; see [Community readiness](docs/community-readiness.md).
+The [community readiness review](https://github.com/magalz/dsh-subagent-panel-plus/blob/main/docs/community-readiness.md) tracks the remaining open items.
 
 ## Layout
 
