@@ -29,7 +29,7 @@ DSH's search index, projection cache and archived-session set still hold the rec
 - No retry button after a failed catalog load, and no migration-required handling in the tree.
 - Hover opens the list even when a narrow header hides the count. Archive shows no undo notice.
 - The breadcrumb switcher inside a subagent session remains native.
-- The icon and menu placement were verified by source review and Node tests, not in a live browser at revision `ee70dbf`. Keyboard use was tested personally by the owner.
+- The icon and menu placement were verified by source review and Node tests, not in a live browser at release `v0.1.0`. Keyboard use was tested personally by the owner.
 
 ## Install
 
@@ -61,7 +61,7 @@ npm run check   # syntax check of both JavaScript halves
 npm test        # node --test over test/*.test.mjs
 ```
 
-Both commands pass at revision `ee70dbf`.
+Both commands pass at release `v0.1.0`.
 
 ## Documents
 
