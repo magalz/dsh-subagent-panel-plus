@@ -1,6 +1,6 @@
 # Community readiness review
 
-Reviewed at implementation revision `ee70dbf` against the DSH 0.2.2-rc.5 documentation
+Reviewed at implementation revision `ee70dbf` (pre-publication history; not present in the public repository) against the DSH 0.2.2-rc.5 documentation
 (`docs/user/develop/basic/publish.md`, `docs/user/guide/plugin-market.md`) and the `dsh-doc`
 display checklist (`references/host-plugin.md`, `plugin-details.md`, `artwork.md`, `ui-plugin.md`).
 
@@ -17,7 +17,7 @@ display checklist (`references/host-plugin.md`, `plugin-details.md`, `artwork.md
 | Icon is a self-contained SVG | `icon.svg` has one circle and two paths; no script, style, image or remote reference. |
 | Syntax and behavior checks | `npm run check` passes; `npm test` passes 37 tests. |
 | Content is in English | No non-English text in tracked source, metadata, tests or docs. |
-| Compatibility is declared | `engines.dsh: >=0.2.2-rc.5 <0.3.0` matches the installed DSH. |
+| Compatibility is declared | Release `v0.1.0` declared `engines.dsh: >=0.2.2-rc.5 <0.3.0` (matched the installed DSH). Widened on 2026-11-23 (PR #5, `6342bb1`) to `>=0.2.2-rc.5 <0.2.3-0 \|\| >=0.2.3-0 <0.3.0-0`, which still admits the installed DSH. |
 | Publishing fields are present | `private: false`, `license: MIT`, `author`, `repository`, `homepage` and `keywords`. |
 | License file | MIT `LICENSE` at the package root. |
 | Keyboard interaction | Tested personally by the owner. |
