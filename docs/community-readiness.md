@@ -27,7 +27,7 @@ display checklist (`references/host-plugin.md`, `plugin-details.md`, `artwork.md
 | ID | Gap | Impact | Proposed action |
 |---|---|---|---|
 | C-04 | No version tag | The Git index generator lists versions from `vX.Y.Z`, `X.Y.Z` or `<name>@X.Y.Z` tags, plus the default-branch version. | Done: tag `v0.1.0` published on 2026-11-23 with the prebuilt tarball attached. |
-| C-06 | Rendered display not verified | The icon, title, description and row menu have been checked in source only. | Verify in **Plugins** after a restart; report as unverified if no browser control is available. |
+| C-06 | Rendered display not verified | The icon, title, description and row menu have been checked in source only. | Done: verified in a live browser on 2026-11-23; the screenshots under docs/screenshots/ show the panel, the row menu, the armed delete, the blocked actions and the full flow. |
 | C-08 | Visible text is not fully routed through the Client locale | DSH recommends localized UI text; this bundle uses English fallback strings. | Keep as a deviation, or add locale keys later. |
 | C-09 | No `dsh-plugin` GitHub topic and no public release asset | Community catalogs screen candidates by topic, bundle manifest, license, tests and an installable release. | Done: topic added 2026-11-21; release `v0.1.0` with the tarball published 2026-11-23; catalog submission open as awesome-dsh-plugin#18183. |
 | C-10 | Verification is single-tier | Community reviewers distinguish unit-tested, replayed and live-mounted verification. | Keep the current wording: syntax/tests verified, keyboard tested by owner, rendering not verified. |

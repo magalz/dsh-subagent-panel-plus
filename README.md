@@ -4,6 +4,26 @@ A DeepSeek Harness (DSH) bundle that replaces the session header's native subage
 
 The native chip is shadowed, not removed: uninstalling the bundle brings it back.
 
+## How it looks
+
+![The subagent panel over the chat: each row shows the model and reasoning effort, a state dot, total tokens, working time and the start time](docs/screenshots/overview.png)
+
+Each row's `⋯` menu offers Archive and Delete permanently:
+
+![The row menu with Archive and Delete permanently](docs/screenshots/delete-menu.png)
+
+The first click arms the delete for four seconds; the second click confirms it:
+
+![Delete permanently armed: Click again to confirm, with the warning that the session folder is removed from disk](docs/screenshots/delete-confirmed.png)
+
+While the subagent runs, both actions stay disabled:
+
+![Archive and Delete permanently disabled for a running subagent](docs/screenshots/delete-blocked.png)
+
+The whole flow — opening the panel, opening a subagent in the right sidebar and full screen, archiving and deleting from the row menu:
+
+![The panel in use: opening it from the header, opening a subagent in the right sidebar and full screen, and archiving and deleting subagents from the row menu](docs/screenshots/session-demo.gif)
+
 ## What it shows
 
 - **Model and reasoning effort** on a third line of each row (`model · effort`), from DSH's model-selection projection; `—` when no selection has been recorded.
@@ -29,7 +49,7 @@ DSH's search index, projection cache and archived-session set still hold the rec
 - No retry button after a failed catalog load, and no migration-required handling in the tree.
 - Hover opens the list even when a narrow header hides the count. Archive shows no undo notice.
 - The breadcrumb switcher inside a subagent session remains native.
-- The icon and menu placement were verified by source review and Node tests, not in a live browser at release `v0.1.0`. Keyboard use was tested personally by the owner.
+- The icon and menu placement were verified by source review, Node tests and live-browser screenshots (see How it looks); keyboard use was tested personally by the owner.
 
 ## Install
 
@@ -53,6 +73,7 @@ The [community readiness review](https://github.com/magalz/dsh-subagent-panel-pl
 | `locale/en.json` | Plugin Manager title and description. |
 | `icon.svg` | Plugin icon. |
 | `test/` | 37 Node tests for both halves. |
+| `docs/screenshots/` | Live-browser screenshots used by this README and the plugin market. |
 
 ## Develop
 
